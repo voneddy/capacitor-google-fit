@@ -285,7 +285,7 @@ public class GoogleFit extends Plugin {
         SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         try {
             return f.parse(date).getTime();
-        } catch (ParseException e) {
+        } catch (Exception e) {
             return -1;
         }
     }
