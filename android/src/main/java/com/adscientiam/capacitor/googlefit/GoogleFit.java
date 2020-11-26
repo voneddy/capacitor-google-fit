@@ -249,6 +249,9 @@ public class GoogleFit extends Plugin {
                                             case "com.google.calories.expended":
                                                 summary.put("calories", dataSet.getDataPoints().get(0).getValue(Field.FIELD_CALORIES));
                                                 break;
+                                            case "com.google.step_count.delta":
+                                                summary.put("steps", dataSet.getDataPoints().get(0).getValue(Field.FIELD_STEPS));
+                                                break;
                                             default:
                                                 Log.i(TAG, "need to handle " + dataSet.getDataType().getName());
                                         }
