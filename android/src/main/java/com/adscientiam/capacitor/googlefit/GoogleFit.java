@@ -281,7 +281,7 @@ public class GoogleFit extends Plugin {
 
     private long dateToTimestamp(String date) {
         if (date.isEmpty()) {
-            return -1;
+            return -1; 
         }
         SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         try {
