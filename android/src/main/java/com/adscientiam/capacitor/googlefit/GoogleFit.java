@@ -220,6 +220,7 @@ public class GoogleFit extends Plugin {
                 .aggregate(DataType.TYPE_SPEED)
                 .aggregate(DataType.TYPE_CALORIES_EXPENDED)
                 .aggregate(DataType.AGGREGATE_CALORIES_EXPENDED)
+                .aggregate(DataType.AGGREGATE_STEP_COUNT_DELTA)
                 .setTimeRange(startTime, endTime, TimeUnit.MILLISECONDS)
                 .bucketByActivitySegment(1, TimeUnit.MINUTES)
                 .enableServerQueries()
