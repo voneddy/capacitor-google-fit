@@ -283,8 +283,8 @@ public class GoogleFit extends Plugin {
         if (date.isEmpty()) {
             return -1; 
         }
-        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         try {
+            SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
             return f.parse(date).getTime();
         } catch (Exception e) {
             return -1;
